@@ -2,6 +2,7 @@ Dix Commenter
 -------------
 
 Usage:
+
     $ cat bidix.dix | ./main.py ruleset.txt > output.dix
 
 How to write rules
