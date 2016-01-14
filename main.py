@@ -73,7 +73,6 @@ def go_through(dom, comment_data):
             rwords = TAG_RE.sub('', r).replace('#', '')
 
             word_match = False
-            print(getText(left), getText(right), file=sys.stderr)
             if lwords == getText(left) and \
                rwords == getText(right):
                 word_match = True
