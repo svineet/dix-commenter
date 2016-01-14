@@ -22,6 +22,7 @@ def getText(node):
 
 def comment_node(node):
     comment = etree.Comment(etree.tostring(node))
+    comment.tail = node.tail
     node.getparent().replace(node, comment)
     return comment
 
